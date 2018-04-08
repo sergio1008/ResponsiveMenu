@@ -1,0 +1,170 @@
+
+
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Slabo 27px', serif;
+*/
+
+/*================================
+            barra Navegacion
+==================================*/
+.bar-nav {
+    position: fixed;
+    height: 50px;
+    left: 0px;
+    color: #fff;
+    width: 50px;
+    background: #f0b607;
+    transition-duration: .3s;
+}
+.bar-nav::before{
+    content: '';
+    position: absolute;
+    border-width: 25px 20px 0px 0px;
+    border-color: #f0b607 #00800000 #00800000 #00800000;
+    top: 90%;
+    border-style: solid;
+}
+.btn-nav {
+    left: 5px;
+    top: 5px;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    font-size: 2.5em;
+}
+.navegacion {
+    position: fixed;
+    height: 100%;
+    width: calc(100% - 49px);
+    left: calc(-100% + 49px) ;
+    top: 0px;
+    padding: 50px;
+    background: #f0b607f5;
+    transition-duration: 0.3s;
+}
+.navegacion>ul {
+    height: 100%;
+    text-align: center;
+}
+.navegacion>ul >li{
+    display: block;
+}
+.navegacion>ul>li>a{
+    display: block;
+    padding: 30px;
+    color: #000;
+    letter-spacing: 6px;
+    position: relative; 
+   transition-duration: 0.3s;   
+}
+.navegacion>ul>li>a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 0%;
+    height: 5px;
+    background: black;
+    display: block;
+    transition-duration: 0.3s;
+
+}
+.navegacion>ul>li>a:hover::before{
+    width: 100%;
+    left: 0px;
+}
+
+.navegacion>ul>li>a:hover{
+    background:  #ffffffc2;
+}
+/*================================
+            cabecera
+==================================*/
+
+
+.cabecera{
+    background-image: url(../images/fondo.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 50px;
+    vertical-align: unset;
+    min-height: 500px;
+}
+.cabecera>h1{
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    text-align: center;
+    font-size: 3em;
+
+}
+
+.cabecera>p{
+    font-family: 'Slabo 27px', serif;
+    font-size: 2em;
+    color: #FFC107;
+    text-align: center;
+
+}
+/*================================
+			sm
+==================================*/
+
+@media (min-width: 576px) { 
+
+ }
+
+/*================================
+			md
+==================================*/
+@media (min-width: 768px) { 
+/*================================
+            Navegacion
+==================================*/
+
+    .bar-nav{display: none}
+    .cabecera{
+        margin-top: 70px;
+    }
+    .navegacion{
+        width: 100%;
+        height: 70px;
+        top: 0px;
+        left: 0px;
+        margin: 0px;
+        padding: 0px;
+    }
+    .navegacion>ul{
+    text-align: center;
+    padding: 10px;
+    }
+    .navegacion>ul>li{
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        margin: 0px 10px 0px 10px;
+    }
+    .navegacion>ul>li>a{
+        display: inline-block;
+        float: left;
+        height: 50px;
+        margin: 0px;
+        padding: 20px 5px;
+    }
+ }
+
+/*================================
+			lg
+==================================*/
+@media (min-width: 992px) { 
+
+ }
+
+/*================================
+			xl
+==================================*/
+@media (min-width: 1200px) { 
+
+ }
